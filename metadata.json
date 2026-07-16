@@ -1,0 +1,6 @@
+{
+  "name": "Action Station",
+  "description": "An interactive, visually stunning educational game designed to teach proper verb usage in sentences with satisfying animations and feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

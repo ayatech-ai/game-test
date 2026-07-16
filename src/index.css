@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", sans-serif;
+  
+  --color-brand-primary: #3B82F6;
+  --color-brand-accent: #10B981;
+  --color-brand-playful: #F59E0B;
+}
+
+/* Keyframe animations for secondary items if needed, though we will rely on Framer Motion */
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-wave {
+  animation: wave 2s ease-in-out infinite;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f0f9ff; /* Soft pastel sky blue base */
+  color: #1e293b;
+}
+
+/* Duolingo style button shadow effect */
+.btn-playful {
+  transition: all 0.1s ease;
+  box-shadow: 0 4px 0 0 currentColor;
+}
+
+.btn-playful:active {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 0 currentColor;
+}
